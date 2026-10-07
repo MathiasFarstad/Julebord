@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julebord 2026</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+                url('https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=1600');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #dc2626;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1>🎄 Julebord 2026 🎄</h1>
+    <p class="subtitle">
+        En kveld med god mat, underholdning og fantastisk selskap
+    </p>
+    <a href="#program" class="btn">Se Programountdown" id="countdown"></div>
+</section>
+
+<section class="section">
+    <div class="card">
+        <h2>📅 Informasjon</h2>
+        <p><strong>Dato:</strong> 11. desember 2026</p>
+        <p><strong>Sted:</strong> Bergen</p>
+        <p><strong>Tid:</strong> 18:00</p>
+    </div>
+
+    <div class="card" id="program">
+        <h2>🎉 Program</h2>
+        <p>18:00 – Velkomstdrink</p>
+        <p>19:00 – Julemiddag</p>
+        <p>21:00 – Quiz & Underholdning</p>
+        <p>22:00 – DJ & Dansegulv</p>
+        <p>02:00 – Takk for i kveld</p>
+    </div>
+
+    <div class="card">
+        <h2>📸 Del bilder</h2>
+        <p>Bruk hashtaggen <strong>#Julebord2026</strong></p>
+    </div>
+</section>
+
+<footer>
+    🎅 Vi gleder oss til å feire sammen!
+</footer>
+
+<script>
+const eventDate = new Date("December 11, 2026 18:00:00").getTime();
+
+const timer = setInterval(() => {
+    const now = new Date().getTime();
+    const diff = eventDate - now;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+    document.getElementById("countdown").innerHTML =
+        `⏳ ${days} dager igjen`;
+
+    if (diff < 0) {
+        clearInterval(timer);
+        document.getElementById("countdown").innerHTML =
+        "🎄 Julebordet har startet!";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
