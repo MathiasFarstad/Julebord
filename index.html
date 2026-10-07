@@ -39,6 +39,7 @@ body{
     font-size:5rem;
     letter-spacing:3px;
     font-weight:300;
+    border-radius:20px;
 }
 
 .hero p{
@@ -47,17 +48,19 @@ body{
 }
 
 .hero-content{
-background:rgba(248,245,241,0.92);
-backdrop-filter:blur(8px);
-padding:50px;
- 
-border-radius:40px;
- 
-border:1px solid rgba(200,169,106,.3);
- 
-box-shadow:
-0 20px 40px rgba(0,0,0,.08),
-0 5px 15px rgba(0,0,0,.05);
+    background:rgba(248,245,241,0.92);
+    backdrop-filter:blur(8px);
+
+    padding:50px;
+    max-width:700px;
+
+    border-radius:40px;
+
+    border:2px solid rgba(200,169,106,.25);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.08),
+        0 5px 15px rgba(0,0,0,.05);
 }
 
 .hero-content h1{
@@ -134,8 +137,10 @@ box-shadow:
 }
 
 .countdown{
-    font-size:2rem;
-    margin-top:15px;
+    color:#2f2f2f;
+    font-size:1.8rem;
+    font-weight:600;
+    text-align:center;
 }
 
 .gallery-qr{
@@ -202,7 +207,7 @@ footer{
 
     padding:20px 35px;
 
-    border-radius:20px;
+    border-radius:40px;
 
     border:1px solid rgba(200,169,106,.3);
 
@@ -210,6 +215,12 @@ footer{
         0 20px 40px rgba(0,0,0,.08),
         0 5px 15px rgba(0,0,0,.05);
 }
+
+.hero-content,
+.countdown-card{
+    border:2px solid rgba(200,169,106,.25);
+}
+    
 </style>
 </head>
 
@@ -273,7 +284,7 @@ footer{
     <h3>🎄 Christmas Buffet </h3>
 
     <img class="food-image" 
-         src="Bilder/Julebuffet_innhold.png"
+         src="Bilder/Julebuffet innhold.png"
          alt="Buffet">
 
 </div>
