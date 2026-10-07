@@ -12,8 +12,8 @@
 body{
     margin:0;
     font-family:'Segoe UI',sans-serif;
-    background:#faf7f2;
-    color:#333;
+    background:#f4f1ec;
+    color:#4a443e;
 }
 
 .hero{
@@ -44,17 +44,17 @@ body{
 }
 
 .btn{
-    background:#b22222;
-    color:white;
+    background:#7c3f3f;
+    color:#f8f5f1;
     padding:15px 35px;
     border-radius:50px;
     text-decoration:none;
-    margin-top:20px;
     font-weight:bold;
+    transition:0.3s;
 }
 
 .btn:hover{
-    background:#8b0000;
+    background:#654040;
 }
 
 .section{
@@ -62,13 +62,12 @@ body{
     margin:auto;
     padding:80px 20px;
 }
-
-.card{
-    background:white;
-    padding:25px;
+    
+.card,
+.food-card{
+    background:#fbfaf8;
     border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    margin-bottom:25px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
 .food-grid{
@@ -88,7 +87,7 @@ body{
 }
 
 footer{
-    background:#b22222;
+    background:#4f5b3f;
     color:white;
     text-align:center;
     padding:40px;
@@ -151,8 +150,10 @@ Doors Open: 19:00 • Dinner Served: 20:00
 
 <div id="countdown" class="countdown"></div>
 
-<a href=M_LINK
-✅ Register Now
+<a href="https://forms.cloud.microsoft/e/VeZtmLJte0"
+   class="btn"
+   target="_blank">
+   ✅ Register for Julebord
 </a>
 
 </section>
@@ -161,12 +162,17 @@ Doors Open: 19:00 • Dinner Served: 20:00
 
 <div class="card">
 
-<h2>📅 Event Information</h2>
+    <h2>📅 Event Information</h2>
 
-<p><strong>Date:</strong> 4 December 2026</p>
-<p><strong>Doors Open:</strong> 19:00</p>
-<p><strong>Dinner Served:</strong> 20:00</p>
-<p><strong>Venue:</strong> YOUR VENUE</p>
+    <p><strong>Date:</strong> Friday 4 December 2026</p>
+
+    <p><strong>Venue:</strong> Scandic Flesland Airport</p>
+
+    <p><strong>Doors Open:</strong> 19:00</p>
+
+    <p><strong>Dinner Served:</strong> 20:00</p>
+
+    <p><strong>Dress Code:</strong> Festive & Smart Casual</p>
 
 </div>
 
@@ -180,23 +186,31 @@ Doors Open: 19:00 • Dinner Served: 20:00
 
 <div class="food-card">
 
-<h3>🎄 Ribbe</h3>
+    <img class="food-image" 
+         src="Bilder/Julebuffet.webp"
+         alt="Buffet">
+    
+    <h3>🎄 Christmas Buffet </h3>
 
-<p>
-Traditional Norwegian Christmas pork ribs with
-classic sides.
-</p>
+    <p>
+    Traditional Norwegian Christmas pork ribs with
+    classic sides.
+    </p>
 
 </div>
 
 <div class="food-card">
+    
+    <img class="food-image" 
+         src="Bilder/Juletapas.webp"
+         alt="Tapas">
+    
+    <h3>🎅 Christmas Tapas</h3>
 
-<h3>🎅 Pinnekjøtt</h3>
-
-<p>
-Traditional pinnekjøtt served with potatoes
-and Christmas accompaniments.
-</p>
+     <p>
+         Traditional pinnekjøtt served with potatoes
+          and Christmas accompaniments.
+    </p>
 
 </div>
 
