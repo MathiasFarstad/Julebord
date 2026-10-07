@@ -47,11 +47,17 @@ body{
 }
 
 .hero-content{
-    background:rgba(248,245,241,0.92);
-    border:1px solid rgba(200,169,106,.3);
-    box-shadow:
-        0 20px 40px rgba(0,0,0,.08),
-        0 5px 15px rgba(0,0,0,.05);
+background:rgba(248,245,241,0.92);
+backdrop-filter:blur(8px);
+padding:50px;
+ 
+border-radius:40px;
+ 
+border:1px solid rgba(200,169,106,.3);
+ 
+box-shadow:
+0 20px 40px rgba(0,0,0,.08),
+0 5px 15px rgba(0,0,0,.05);
 }
 
 .hero-content h1{
@@ -64,20 +70,27 @@ body{
 
 .btn{
     display:inline-block;
-    background:#7c3f3f;
-    color:#f8f5f1;
-    padding:20px 50px;
-    border-radius:50px;
+    background:#4f5b3f;
+    color:white;
+    padding:20px 55px;
+    border-radius:999px;
     text-decoration:none;
     font-weight:600;
     font-size:1.2rem;
-    transition:0.3s;
-    margin-top:20px;
+
+    border:2px solid rgba(255,255,255,0.25);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.12);
+
+    transition:all .3s ease;
 }
 
 .btn:hover{
-    background:#654040;
-    transform:translateY(-2px);
+    background:#3f4932;
+    transform:translateY(-3px);
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.15);
 }
 
 .section{
@@ -181,6 +194,22 @@ footer{
     text-align:center;
 }
 
+.countdown-card{
+    margin-top:20px;
+
+    background:rgba(248,245,241,0.92);
+    backdrop-filter:blur(8px);
+
+    padding:20px 35px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(200,169,106,.3);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.08),
+        0 5px 15px rgba(0,0,0,.05);
+}
 </style>
 </head>
 
@@ -201,11 +230,12 @@ footer{
         <a href="https://forms.cloud.microsoft/e/VeZtmLJte0"
            class="btn"
            target="_blank">
-               ✅ Register for the Julebord
+               Register for the Julebord
         </a>
     </div>
-    <div id="countdown" class="countdown"></div>
-
+    <div class="countdown-card">
+        <div id="countdown" class="countdown"></div>
+    </div>
 </section>
 
 <section class="section">
