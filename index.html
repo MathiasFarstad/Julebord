@@ -1,82 +1,120 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Julebord 2026</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: white;
+
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#faf7f2;
+    color:#333;
 }
 
-.hero {
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-                url('https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=1600');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+    url('https://images.unsplash.com/photo-1512909006721-3d6018887383');
+    background-size:cover;
+    background-position:center;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 
-    padding: 20px;
+    text-align:center;
+    color:white;
+    padding:20px;
 }
 
-h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
 }
 
-.subtitle {
-    font-size: 1.4rem;
-    margin-bottom: 30px;
+.hero p{
+    font-size:1.3rem;
 }
 
-.btn {
-    background: #dc2626;
-    color: white;
-    padding: 15px 40px;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
+.btn{
+    background:#b22222;
+    color:white;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    margin-top:20px;
+    font-weight:bold;
 }
 
-.section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 80px 20px;
+.btn:hover{
+    background:#8b0000;
 }
 
-.card {
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 20px;
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
 }
 
-.countdown {
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 20px;
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:25px;
 }
 
-footer {
-    text-align: center;
-    padding: 40px;
-    background: #020617;
+.food-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
-.food-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 20px;
+.food-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.countdown{
+    font-size:2rem;
+    margin-top:15px;
+}
+
+.gallery-qr{
+    width:250px;
+    margin-top:20px;
+}
+
+footer{
+    background:#b22222;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.snowflake{
+    position:fixed;
+    top:-10px;
+    color:white;
+    user-select:none;
+    z-index:9999;
+    animation:fall linear infinite;
+}
+
+@keyframes fall {
+    to{
+        transform:translateY(110vh);
+    }
 }
 
 </style>
@@ -85,97 +123,193 @@ footer {
 <body>
 
 <section class="hero">
-    <h1>🎄 Julebord 2026 🎄</h1>
-    <p class="subtitle">
-        En kveld med god mat, underholdning og fantastisk selskap
-    </p>
-    <a href="#program" class="btn">Se Programountdown" id="countdown"></div>
+
+<h1>🎄 Julebord 2026 🎄</h1>
+
+<p>
+Friday 4 December 2026
+</p>
+
+<p>
+Doors Open: 19:00 • Dinner Served: 20:00
+</p>
+
+<div id="countdown" class="countdown"></div>
+
+<a href=M_LINK
+✅ Register Now
+</a>
+
 </section>
 
 <section class="section">
-    <div class="card">
-        <h2>📅 Informasjon</h2>
-        <p><strong>Dato:</strong> 11. desember 2026</p>
-        <p><strong>Sted:</strong> Bergen</p>
-        <p><strong>Tid:</strong> 18:00</p>
-    </div>
 
-    <div class="card" id="program">
-        <h2>🎉 Program</h2>
-        <p>19:00 – Doors Open & Welcome Drink</p>
-        <p>20:00 – Dinner Served</p>
-        <p>21:30 – Quiz & Entertainment</p>
-        <p>22:30 – Music & Dancing</p>
-        <p>02:00 – End of Event</p>
-    </div>
+<div class="card">
 
-    <div class="card">
-        <h2>📸 Del bilder</h2>
-        <p>Bruk hashtaggen <strong>#Julebord2026</strong></p>
-    </div>
+<h2>📅 Event Information</h2>
+
+<p><strong>Date:</strong> 4 December 2026</p>
+<p><strong>Doors Open:</strong> 19:00</p>
+<p><strong>Dinner Served:</strong> 20:00</p>
+<p><strong>Venue:</strong> YOUR VENUE</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 style="text-align:center;">🍽️ Dinner Choices</h2>
+
+<div class="food-grid">
+
+<div class="food-card">
+
+<h3>🎄 Ribbe</h3>
+
+<p>
+Traditional Norwegian Christmas pork ribs with
+classic sides.
+</p>
+
+</div>
+
+<div class="food-card">
+
+<h3>🎅 Pinnekjøtt</h3>
+
+<p>
+Traditional pinnekjøtt served with potatoes
+and Christmas accompaniments.
+</p>
+
+</div>
+
+<div class="food-card">
+
+<h3>🌱 Vegetarian Menu</h3>
+
+<p>
+A festive Christmas-inspired vegetarian
+alternative.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="card">
+
+<h2>🎉 Programme</h2>
+
+<p>19:00 — Doors Open & Welcome Drinks</p>
+
+<p>20:00 — Dinner Served</p>
+
+<p>21:30 — Quiz & Entertainment</p>
+
+<p>22:30 — Music & Dancing</p>
+
+<p>02:00 — End of Event</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="card" style="text-align:center;">
+
+<h2>📸 Shared Photo Gallery</h2>
+
+<p>
+Scan the QR code below to upload and view photos from the evening.
+</p>
+
+<img src="YOUR_AGE
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="card" style="text-align:center;">
+
+<h2>✅ Registration</h2>
+
+<p>
+Please register before the deadline.
+</p>
+
+YOUR_FORM_LINK
+Register Here
+</a>
+
+</div>
+
 </section>
 
 <footer>
-    🎅 Vi gleder oss til å feire sammen!
+
+🎄 We look forward to celebrating with you! 🎅
+
 </footer>
 
 <script>
-const eventDate = new Date("December 4, 2026 19:00:00").getTime();
 
-const timer = setInterval(() => {
-    const now = new Date().getTime();
-    const diff = eventDate - now;
+const eventDate =
+new Date("December 4, 2026 19:00:00").getTime();
 
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+setInterval(() => {
 
-    document.getElementById("countdown").innerHTML =
-        `⏳ ${days} dager igjen`;
+const now = new Date().getTime();
 
-    if (diff < 0) {
-        clearInterval(timer);
-        document.getElementById("countdown").innerHTML =
-        "🎄 Julebordet har startet!";
-    }
-}, 1000);
+const distance = eventDate - now;
+
+const days =
+Math.floor(distance / (1000*60*60*24));
+
+const hours =
+Math.floor((distance%(1000*60*60*24))
+/(1000*60*60));
+
+const minutes =
+Math.floor((distance%(1000*60*60))
+/(1000*60));
+
+document.getElementById("countdown").innerHTML =
+`⏳ ${days} days ${hours} hours ${minutes} minutes`;
+
+},1000);
+
+/* Snow Effect */
+
+for(let i=0;i<40;i++){
+
+const snow = document.createElement("div");
+
+snow.classList.add("snowflake");
+
+snow.innerHTML="❄";
+
+snow.style.left=Math.random()*100+"vw";
+
+snow.style.opacity=Math.random();
+
+snow.style.fontSize=(10+Math.random()*20)+"px";
+
+snow.style.animationDuration=
+(5+Math.random()*10)+"s";
+
+document.body.appendChild(snow);
+}
+
 </script>
-
-<section class="section">
-    <h2 style="text-align:center;">🍽️ Choose Your Dinner</h2>
-
-    <div class="food-grid">
-
-        <div class="card">
-            <h3>🥩 Traditional Christmas Plate</h3>
-            <p>Ribbe with traditional Norwegian sides.</p>
-        </div>
-
-        <div class="card">
-            <h3>🐑 Pinnekjøtt</h3>
-            <p>Classic pinnekjøtt with potatoes and sides.</p>
-        </div>
-
-        <div class="card">
-            <h3>🌱 Vegetarian Christmas Menu</h3>
-            <p>A festive vegetarian alternative.</p>
-        </div>
-
-    </div>
-</section>
-
-<section class="section">
-    <div class="card">
-        <h2>📸 Shared Photo Gallery</h2>
-
-        <p>
-            Scan the QR code below to upload photos and view everyone else's pictures.
-        </p>
-
-        <img src="qr-code.png"
-             alt="Photo Gallery QR Code"
-             style="max-width:250px;display:block;margin:auto;">
-
-    </div>
-</section>
 
 </body>
 </html>
