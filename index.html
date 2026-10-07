@@ -46,18 +46,39 @@ body{
     letter-spacing:1px;
 }
 
+.hero-content{
+    background:rgba(255,255,255,0.88);
+    backdrop-filter:blur(8px);
+    padding:50px;
+    border-radius:30px;
+    max-width:700px;
+    box-shadow:0 10px 40px rgba(0,0,0,.12);
+}
+
+.hero-content h1{
+    color:#5d4037;
+}
+
+.hero-content p{
+    color:#4a443e;
+}
+
 .btn{
+    display:inline-block;
     background:#7c3f3f;
     color:#f8f5f1;
-    padding:15px 35px;
+    padding:20px 50px;
     border-radius:50px;
     text-decoration:none;
-    font-weight:bold;
+    font-weight:600;
+    font-size:1.2rem;
     transition:0.3s;
+    margin-top:20px;
 }
 
 .btn:hover{
     background:#654040;
+    transform:translateY(-2px);
 }
 
 .section{
@@ -167,24 +188,24 @@ footer{
 <body>
 
 <section class="hero">
+    <div class="hero-content">
+        <h1>🎄 Julebord 2026 🎄</h1>
 
-<h1>🎄 Julebord 2026 🎄</h1>
+        <p>
+            Friday 4 December 2026
+        </p>
 
-<p>
-Friday 4 December 2026
-</p>
+        <p>
+            Doors Open: 19:00 • Dinner Served: 20:00
+        </p>
 
-<p>
-Doors Open: 19:00 • Dinner Served: 20:00
-</p>
-
-<div id="countdown" class="countdown"></div>
-
-<a href="https://forms.cloud.microsoft/e/VeZtmLJte0"
-   class="btn"
-   target="_blank">
-   ✅ Register for Julebord
-</a>
+        <a href="https://forms.cloud.microsoft/e/VeZtmLJte0"
+           class="btn"
+           target="_blank">
+               ✅ Register for the Julebord
+        </a>
+    </div>
+    <div id="countdown" class="countdown"></div>
 
 </section>
 
