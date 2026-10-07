@@ -220,6 +220,24 @@ footer{
 .countdown-card{
     border:2px solid rgba(200,169,106,.25);
 }
+
+.programme-item{
+    display:grid;
+    grid-template-columns:100px 1fr;
+    align-items:center;
+    margin:15px 0;
+}
+
+.programme-time{
+    font-weight:700;
+    color:#5d4037;
+    text-align:right;
+    padding-right:20px;
+}
+
+.programme-event{
+    text-align:left;
+}
     
 </style>
 </head>
@@ -228,7 +246,7 @@ footer{
 
 <section class="hero">
     <div class="hero-content">
-        <h1>🎄 Julebord 2026 🎄</h1>
+        <h1>🎄Julebord 2026🎄</h1>
 
         <p>
             Friday 4 December 2026
@@ -326,17 +344,27 @@ footer{
 
 <div class="card info-card">
 
-<h2>🎉 Programme</h2>
+    <h2>🎉 Programme</h2>
 
-<p>19:00 — Doors Open & Welcome Drinks</p>
+    <div class="programme-item">
+        <span class="programme-time">19:00</span>
+        <span class="programme-event">Doors Open & Welcome Drink</span>
+    </div>
 
-<p>20:00 — Dinner Served</p>
+    <div class="programme-item">
+        <span class="programme-time">20:00</span>
+        <span class="programme-event">Dinner Served</span>
+    </div>
 
-<p>21:30 — Get Silly</p>
+    <div class="programme-item">
+        <span class="programme-time">21:30</span>
+        <span class="programme-event">Quiz & Entertainment</span>
+    </div>
 
-<p>22:30 — Borgens USB</p>
-
-<p>02:00 — End of Event</p>
+    <div class="programme-item">
+        <span class="programme-time">22:30</span>
+        <span class="programme-event">Music & Dancing</span>
+    </div>
 
 </div>
 
